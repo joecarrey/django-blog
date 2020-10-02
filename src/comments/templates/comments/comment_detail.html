@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ object.title }}</h1>
+<p>{{ object.content }}</p>
+<p>By: {{ object.author }}</p>
+
+{% if not comments %}
+	<p>No Comments...</p>
+{% else %}
+    {% for comment in comments %}
+    	<p>- {{ comment.body }} -</p>
+    	<hr>
+    {% endfor %}
+    <br>
+{% endif %}
+{% endblock %}

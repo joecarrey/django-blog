@@ -1,0 +1,355 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"r",
+				"return"
+			],
+			[
+				"va",
+				"value\tAttr"
+			],
+			[
+				"re",
+				"reverse"
+			],
+			[
+				"Arti",
+				"Article"
+			],
+			[
+				"get_",
+				"get_object_or_404"
+			],
+			[
+				"Pr",
+				"Product"
+			],
+			[
+				"get",
+				"get_object_or_404"
+			],
+			[
+				"prod",
+				"products"
+			],
+			[
+				"ob",
+				"obj"
+			],
+			[
+				"in",
+				"initial_data"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"pr",
+				"product_detail"
+			],
+			[
+				"Fo",
+				"ProductForm"
+			],
+			[
+				"P",
+				"Product"
+			],
+			[
+				"abo",
+				"about_view"
+			],
+			[
+				"cont",
+				"Contact"
+			],
+			[
+				"ho",
+				"home_view"
+			],
+			[
+				"fil",
+				"fileDesc1"
+			],
+			[
+				"red",
+				"readbuffer"
+			],
+			[
+				"read",
+				"readbuffer"
+			],
+			[
+				"rea",
+				"readbuffer"
+			],
+			[
+				"chil",
+				"child2"
+			],
+			[
+				"file",
+				"fileDesc"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"fib",
+				"fibArray"
+			],
+			[
+				"fi",
+				"fibArray"
+			],
+			[
+				"b",
+				"b"
+			],
+			[
+				"st",
+				"stdlib.h\tstandard header"
+			],
+			[
+				"str",
+				"string.h\tstandard header"
+			],
+			[
+				"dur",
+				"duration"
+			],
+			[
+				"it",
+				"iter"
+			],
+			[
+				"ram",
+				"rampup"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: INS",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/akmal/django/trydjango/src/blog/forms.py",
+		"/home/akmal/django/trydjango/src/blog/urls.py",
+		"/home/akmal/django/trydjango/src/blog/views.py",
+		"/home/akmal/django/trydjango/src/blog/models.py",
+		"/home/akmal/django/trydjango/src/products/models.py",
+		"/home/akmal/django/trydjango/src/blog/templates/articles/article_create.html",
+		"/home/akmal/django/trydjango/src/blog/templates/articles/article_delete.html",
+		"/home/akmal/django/trydjango/src/trydjango/urls.py",
+		"/home/akmal/django/trydjango/src/blog/templates/articles/article_list.html",
+		"/home/akmal/django/trydjango/src/blog/templates/articles/article_detail.html",
+		"/home/akmal/django/trydjango/src/blog/admin.py",
+		"/home/akmal/django/trydjango/src/trydjango/settings.py",
+		"/home/akmal/django/trydjango/src/pages/views.py",
+		"/home/akmal/django/trydjango/src/products/views.py",
+		"/home/akmal/django/trydjango/src/products/templates/products/product_detail.html",
+		"/home/akmal/django/trydjango/src/products/templates/products/product_create.html",
+		"/home/akmal/django/trydjango/src/products/forms.py",
+		"/home/akmal/django/trydjango/src/templates/product/detail.html",
+		"/home/akmal/django/trydjango/src/templates/navbar.html",
+		"/home/akmal/django/trydjango/src/templates/contact.html",
+		"/home/akmal/django/trydjango/src/templates/about.html",
+		"/home/akmal/django/trydjango/src/templates/home.html",
+		"/home/akmal/django/trydjango/src/templates/base.html",
+		"/home/akmal/django/trydjango/src/products/admin.py",
+		"/home/akmal/ui-tests/sample_test.robot",
+		"/home/akmal/ui-tests/open_report.robot",
+		"/home/akmal/ui-tests/create_test.robot",
+		"/home/akmal/ui-tests/tests.robot",
+		"/home/akmal/ui-tests/change_name.robot",
+		"/home/akmal/ui-tests/login.robot",
+		"/home/akmal/ui-tests/sample_python.robot",
+		"/home/akmal/ui-tests/hello_world.robot",
+		"/home/akmal/Desktop/prcB.c",
+		"/home/akmal/Desktop/prcA.c",
+		"/home/akmal/helloworld.py",
+		"/home/akmal/Desktop/test.c",
+		"/home/akmal/Documents/up_lab#4/test2.c",
+		"/home/akmal/Documents/up_lab#4/test1.c",
+		"/home/akmal/Documents/up/test3.c",
+		"/home/akmal/.cache/.fr-IJg4rU/lab2_u1610016/task1/lab2_1.c",
+		"/home/akmal/Desktop/lab.c",
+		"/home/akmal/Desktop/pipe_full_dup.c",
+		"/home/akmal/Documents/up/test.c",
+		"/home/akmal/Documents/up/test2.c",
+		"/home/akmal/Documents/up/test4.c",
+		"/home/akmal/Documents/up/test5.c",
+		"/home/akmal/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 209.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 209.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "manage.sublime-project",
+	"replace":
+	{
+		"height": 414.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 339.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 463.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 181.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

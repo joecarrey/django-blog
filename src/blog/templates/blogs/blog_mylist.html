@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<a href="/blog/create">ADD POST</a>
+{% endif %}
+{% for blog in blogs %}
+	<p>{{ blog.id }} - <a href="{{ blog.get_absolute_url }}">{{ blog.title }}</a>
+	
+	{% if user.is_authenticated %}
+		{% if user.id == blog.author_id %}
+			    
+		--- <a href="/blog/{{blog.id}}/update/">EDIT</a> --- <a href="/blog/{{blog.id}}/delete">DELETE</a>
+			
+		{% endif %}	
+	{% endif %}
+
+	</p>
+{% endfor %}
+
+{% endblock %}

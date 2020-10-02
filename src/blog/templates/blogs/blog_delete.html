@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+	<form method="POST" action="{% url 'blogs:blog-delete' blog.id %}"> 
+		{% csrf_token %}
+		<h1>Do you want to delete the post "{{ blog.title }}"</h1>
+		<p><input type="submit" value="Yes"> <a href="../../">Cancel</a></p>
+	</form>
+{% else %}
+    <h1>Unauthorized!</h1>
+{% endif %}
+
+{% endblock %}

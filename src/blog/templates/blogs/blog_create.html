@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+	<form method="POST"> 
+		{% csrf_token %}
+		{{ form.as_p }}
+		<!-- <input type="text" name="title">
+		<input type="text" name="content">
+		<input type="submit" value="Save"> -->
+	</form>
+{% else %}
+    <h1>Unauthorized!</h1>
+{% endif %}
+
+{% endblock %}
