@@ -20,8 +20,14 @@ def BlogListView(request):
 	return render(request, 'blogs/blog_list.html', content)
 
 def BlogDetailView(request, id):
+	blog = get_object_or_404(Blog, id=id)
+	is_liked = False
+	if blog.likes.filter(id=request.user.id).exists():
+		is_liked = True
 	content = {
-		'blog': get_object_or_404(Blog, id=id)
+		'blog': blog,
+		'is_liked': is_liked,
+		'total_likes': blog.total_likes()
 	}
 	return render(request, 'blogs/blog_detail.html', content)
 
@@ -64,6 +70,17 @@ def BlogDeleteView(request, id):
 		blog.delete()
 		return HttpResponseRedirect(reverse("blogs:blog-list"))
 	return render(request, 'blogs/blog_delete.html', {'blog': blog})
+
+def likeBlog(request):
+	blog = get_object_or_404(Blog, id=request.POST.get('like'))
+	is_liked = False
+	if blog.likes.filter(id=request.user.id).exists():
+		blog.likes.remove(request.user)
+		is_liked = False
+	else:
+		blog.likes.add(request.user)
+		is_liked = True
+	return HttpResponseRedirect(reverse("blogs:blog-detail", kwargs={"id": request.POST.get('like')}))
 
 # class BlogListView(ListView):
 # 	template_name = 'blogs/blog_list.html'

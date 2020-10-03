@@ -5,7 +5,8 @@ from .views import (
     BlogMyListView,
     BlogCreateView,
     BlogUpdateView,
-    BlogDeleteView
+    BlogDeleteView,
+    likeBlog
 )
 
 app_name = 'blogs'
@@ -16,4 +17,5 @@ urlpatterns = [
     path('<int:id>', BlogDetailView, name='blog-detail'),
     path('<int:id>/update/', BlogUpdateView, name='blog-update'),
     path('<int:id>/delete/', BlogDeleteView, name='blog-delete'),
+    path('like/', likeBlog, name='blog-like'),
 ]

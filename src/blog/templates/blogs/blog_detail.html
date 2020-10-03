@@ -3,6 +3,16 @@
 {% block content %}
 <h1>{{ blog.title }}</h1>
 <p>{{ blog.content }}</p>
+<p>Post author: {{ blog.author }}</p>
+<p>{{ total_likes }} Like{{ total_likes | pluralize }}</p>
+<form method="POST" action="{% url 'blogs:blog-like' %}">
+	{% csrf_token %}
+	{% if is_liked %}
+		<button type="submit" name="like" value="{{ blog.id }}" class="btn btn-danger">Dislike</button>
+	{% else %}
+		<button type="submit" name="like" value="{{ blog.id }}" class="btn btn-primary">Like</button>
+	{% endif %}
+</form>
 <br>
 <hr><p>Comments:   <a href="{% url 'comments:comment-create' blog.id %}">Add Comment</a></p><hr>
 {% if blog.comment_set.all %}
@@ -19,5 +29,4 @@
     <p>Be the first to comment...</p>
 {% endif %}
 <hr><hr>
-<p>Post author: {{ blog.author }}</p>
 {% endblock %}
