@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<a href="{% url 'products:product-create' %}">Add Product</a>
+{% endif %}
+{% for product in products %}
+	<p>{{ product.id }} - <a href="{{ product.get_absolute_url }}">{{ product.title }}</a>
+	
+	{% if user.is_authenticated %}
+		{% if user.id == product.owner_id %}
+			    
+		--- <a href="{% url 'products:product-update' product.id %}">EDIT</a> --- <a href="{% url 'products:product-delete' product.id %}">DELETE</a>
+			
+		{% endif %}	
+	{% endif %}
+
+	</p>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<a href="{% url 'products:product-create' %}">Add Product</a>
+{% endif %}
+<br><br>
+{% for product in products %}
+	<p>{{ product.pk }} - <a href="{{ product.get_absolute_url }}">{{ product.title }}</a></p>
+{% endfor %}
+
+{% endblock %}

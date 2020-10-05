@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ product.title }}</h1>
+<p>{{ product.description }}</p>
+<p>Product owner: {{ product.owner }}</p>
+<p>{{ total_likes }} Like{{ total_likes | pluralize }}</p>
+<form method="POST" action="{% url 'products:product-like' %}">
+	{% csrf_token %}
+	{% if is_liked %}
+		<button type="submit" name="like" value="{{ product.pk }}" class="btn btn-danger">Dislike</button>
+	{% else %}
+		<button type="submit" name="like" value="{{ product.pk }}" class="btn btn-primary">Like</button>
+	{% endif %}
+</form>
+<br>
+<hr><p>Comments:   <a href="{% url 'products:review-create' product.pk %}">Add Comment</a></p><hr>
+{% if product.review_set.all %}
+	{% for review in product.review_set.all %}
+		<p>{{ review.body }} <br>by: {{ review.author }} 
+		{% if user.is_authenticated %}
+			{% if user.id == review.author_id %}
+				  <a href="{% url 'products:review-delete' review.pk %}">Delete</a>
+			{% endif %}	
+		{% endif %}
+		</p>
+	{% endfor %}
+{% else %}
+    <p>Be the first to comment...</p>
+{% endif %}
+<hr><hr>
+{% endblock %}

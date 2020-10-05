@@ -5,11 +5,8 @@
 {% if user.is_authenticated %}
 	<form method="POST"> 
 		{% csrf_token %}
-		{{ form.as_p }}
-		<input type="submit" value="Submit">
-		<!-- <input type="text" name="title">
-		<input type="text" name="content">
-		<input type="submit" value="Save"> -->
+		<h1>Do you want to delete the review:</h1> <p>"{{ object.body }}"</p>
+		<p><input type="submit" value="Yes"> <a href="{{ object.product.get_absolute_url }}">Cancel</a></p>
 	</form>
 {% else %}
     <h1>Unauthorized!</h1>
